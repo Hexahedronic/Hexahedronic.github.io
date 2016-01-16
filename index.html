@@ -11,6 +11,23 @@
 	<link href='http://fonts.googleapis.com/css?family=Quicksand:300' rel='stylesheet' type='text/css'>
 
 	<script src="js/semantic.min.js"></script>
+	
+	<script>
+	
+		$(document).ready(function(){
+		
+			var nodelist = $("email");
+			
+			nodelist.each(function(i, e){
+				
+				e.html("<a href=\"" + e.attr("value") + "\">" + e.attr("value") + "</a>")
+				
+			});
+			
+		});
+		
+	</script>
+	
 </head>
 
 <body>
@@ -33,9 +50,9 @@
 
 		<p>Our current primary members are:</p>
 		<ul>
-		<li><a href="https://github.com/CaveeJohnson/" target="_blank">Callum 'Cave' John Slaney</a> (notq2f2@gmail.com)</li>
-		<li><a href="https://github.com/TrenchFroast/" target="_blank">Andrew Austin</a> (ghosty.hexahedronic@gmail.com)</li>
-		<li><a href="https://github.com/SteppuFIN/" target="_blank">Stepan Fedotov</a> (admin@futuretechs.eu)</a></li>
+		<li><a href="https://github.com/CaveeJohnson/" target="_blank">Callum 'Cave' John Slaney</a> (<email value="notq2f2@gmail.com"/>)</li>
+		<li><a href="https://github.com/TrenchFroast/" target="_blank">Andrew Austin</a> (<email value="ghosty.hexahedronic@gmail.com"/>)</li>
+		<li><a href="https://github.com/SteppuFIN/" target="_blank">Stepan Fedotov</a> (<email value="admin@futuretechs.eu"/>)</a></li>
 		</ul>
 
 		<h3>
