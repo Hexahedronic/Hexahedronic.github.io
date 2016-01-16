@@ -18,11 +18,11 @@
 		
 			var nodelist = $("email");
 			
-			nodelist.each(function(i, e){
+			nodelist.each(function(i, el){
 				
-				var val = e.attr("value");
+				var val = el.attr("value");
 				
-				e.html("<a href=\"" + val + "\">" + val + "</a>")
+				el.html("<a href=\"" + val + "\">" + val + "</a>")
 				
 			});
 			
