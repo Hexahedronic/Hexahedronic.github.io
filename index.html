@@ -20,7 +20,9 @@
 			
 			nodelist.each(function(i, e){
 				
-				e.html("<a href=\"" + e.attr("value") + "\">" + e.attr("value") + "</a>")
+				var val = e.attr("value");
+				
+				e.html("<a href=\"" + val + "\">" + val + "</a>")
 				
 			});
 			
